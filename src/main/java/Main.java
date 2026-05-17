@@ -6,7 +6,7 @@ public class Main {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int total = service.total(sales);
+        long total = service.total(sales);
         System.out.println("сумма продаж за 12 месяцев: " + total);
 
         long averageSalesAmount = service.averageSalesAmount(sales);
