@@ -21,11 +21,11 @@ public class StatsService {
         int maxMonth = 0; // номер месяца с максимальными продажами среди просмотренных ранее
 
         for (int i = 0; i < sales.length; i++)
-            if (sales[i] > sales[maxMonth]) { // в рассматриваемом i-м месяце продаж больше
+            if (sales[i] >= sales[maxMonth]) { // в рассматриваемом i-м месяце продаж больше
                 maxMonth = i; // запомним его как максимальный
             }
 
-        return maxMonth + 1;
+        return maxMonth +1;
     }
 
     public int minSales(long[] sales) {
